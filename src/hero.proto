@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package hero;
+
+service HeroService {
+    rpc FindOne (Email) returns (Response) {}
+}
+
+message Response {
+    string resp = 1;
+}
+
+message  Email {
+    string mail = 1;
+}
